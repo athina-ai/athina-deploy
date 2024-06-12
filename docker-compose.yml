@@ -20,7 +20,7 @@ services:
 
   api:
     profiles: ["core"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-api:v1.4.1
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-api:v1.5.0
     build:
       context: ../athina-api/.
       dockerfile: Dockerfile
@@ -106,7 +106,7 @@ services:
 
   scheduler:
     profiles: ["core"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-scheduler:v1.4.1
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-scheduler:v1.5.0
     build:
       context: ../athina-scheduler/.
       dockerfile: Dockerfile
@@ -151,7 +151,7 @@ services:
 
   analytics:
     profiles: ["core"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-analytics:v1.4.0
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-analytics:v1.5.0
     build:
       context: ../athina-analytics/.
       dockerfile: Dockerfile
@@ -187,7 +187,7 @@ services:
 
   gateway:
     profiles: ["core"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-gateway:v1.4.0
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-gateway:v1.5.0
     build:
       context: ../gateway/.
       dockerfile: Dockerfile
