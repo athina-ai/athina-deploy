@@ -201,7 +201,7 @@ services:
 
   fastapi:
     profiles: ["worker"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-workers:v1.4.3
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-workers:v1.5.0
     build:
       context: ../athina-workers/.
       dockerfile: ./Dockerfile-server
@@ -250,7 +250,7 @@ services:
 
   worker:
     profiles: ["worker"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-workers:v1.4.3
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-workers:v1.5.0
     build:
       context: ../athina-workers/.
       dockerfile: ./Dockerfile-server
