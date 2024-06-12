@@ -1,0 +1,538 @@
+[
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Fatemeh Pahlavi was born in Tehran on 30 October 1928. She was the tenth child of Reza Shah and his fourth and last wife, Esmat Dowlatshahi. Her mother was from the Qajar dynasty and married Reza Shah in 1923. Fatemeh was the full-sister of Abdul Reza Pahlavi, Ahmad Reza Pahlavi, Mahmoud Reza Pahlavi and Hamid Reza Pahlavi.\""
+      },
+      "query": "How many full siblings did Fatemeh Pahlavi have?",
+      "response": "4 siblings: Abdul Reza Pahlavi, Ahmad Reza Pahlavi, Mahmoud Reza Pahlavi and Hamid Reza Pahlavi."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Alexander III of Macedon (Ancient Greek: \\u1f08\\u03bb\\u03ad\\u03be\\u03b1\\u03bd\\u03b4\\u03c1\\u03bf\\u03c2, romanized: Alexandros; 20/21 July 356 BC \\u2013 10/11 June 323 BC), commonly known as Alexander the Great, was a king of the ancient Greek kingdom of Macedon\""
+      },
+      "query": "Who was Alexander the Great?",
+      "response": "Alexander III of Macedon, commonly known as Alexander the Great, was a king of the ancient Greek kingdom of Macedon. He succeeded his father Philip II to the throne in 336 BC at the age of 20, and spent most of his ruling years conducting a lengthy military campaign throughout Western Asia and Egypt. By the age of 30, he had created one of the largest empires in history, stretching from Greece to northwestern India. He was undefeated in battle and is widely considered to be one of history's greatest and most successful military commanders."
+    },
+    {
+      "prompt_slug": "closed_qa/irrelevant_context",
+      "context": {
+        "information": "Rajkot is located at 22.3\u00b0N 70.78\u00b0E. It has an average elevation of 128 metres (420 ft). The city is spread in the area of 170.00 km2."
+      },
+      "query": "What are the rivers in Rajkot area?",
+      "response": "There are two rivers - Aaji and Nyari - in the vicinity of Rajkot."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Lester D. Menke (December 16, 1918 \\u2013 March 5, 2016) was a state Representative from the Iowa's 5th and 7th Districts. He served in the Iowa House of Representatives from 1973 to 1985, serving as Speaker pro Tempore from 1981 to 1985. After he served in the Iowa House, Menke served as a liaison between Governor Terry Branstad and the legislature for two years. Menke has a B.A. from Morningside College, where he later served as a member of the board of directors, and attended The University of Iowa College of Law for one year. He worked as a farm owner and for an insurance agency. He served on various school boards and served as president of the Iowa Association of School Boards and State Board of Public Instruction and as director of the National Association of State Boards of Education, as well as serving on the Iowa Educational Radio and Television Facilities Board. Menke received Morningside College's Distinguished Alumni award in 1975.\""
+      },
+      "query": "Who was Lester Menke",
+      "response": "Lester D. Menke (December 16, 1918 \u2013 March 5, 2016) was a state Representative from the Iowa's 5th and 7th Districts. He served in the Iowa House of Representatives from 1973 to 1985, serving as Speaker pro Tempore from 1981 to 1985. \n\nAfter he served in the Iowa House, Menke served as a liaison between Governor Terry Branstad and the legislature for two years. Menke has a B.A. from Morningside College, where he later served as a member of the board of directors, and attended The University of Iowa College of Law for one year. He worked as a farm owner and for an insurance agency.\n\nHe served on various school boards and served as president of the Iowa Association of School Boards and State Board of Public Instruction and as director of the National Association of State Boards of Education, as well as serving on the Iowa Educational Radio and Television Facilities Board. Menke received Morningside College's Distinguished Alumni award in 1975."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Thomas Attewell (7 November 1869 \\u2013 6 July 1937) was an English first-class cricketer. Attewell was a right-handed batsman who bowled right-arm medium pace. He was born at Keyworth, Nottinghamshire.\\n\\nHis brother William played first-class cricket for Nottinghamshire and the Marylebone Cricket Club, as well as Test cricket for England. His cousin Walter Attewell played first-class cricket for Nottinghamshire.\""
+      },
+      "query": "What was the first name of Thomas Attewell's brother and cousin?",
+      "response": "William and Walter"
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Shivaji I (Shivaji Bhonsle; Marathi pronunciation: c.19 February 1630 \\u2013 3 April 1680), also referred to as Chhatrapati Shivaji Maharaj, was an Indian ruler and a member of the Bhonsle Maratha clan. Eventually, Shivaji carved out his own independent kingdom from the declining Adilshahi sultanate of Bijapur which formed the genesis of the Maratha Empire. In 1674, he was formally crowned the Chhatrapati of his realm at Raigad Fort.\\n\\nOver the course of his life, Shivaji engaged in both alliances and hostilities with the Mughal Empire, the Sultanate of Golkonda, Sultanate of Bijapur and the European colonial powers. Shivaji's military forces expanded the Maratha sphere of influence, capturing and building forts, and forming a Maratha navy. Shivaji established a competent and progressive civil rule with well-structured administrative organisations. He revived ancient Hindu political traditions, court conventions and promoted the usage of the Marathi and Sanskrit languages, replacing Persian in court and administration.\\n\\nShivaji's legacy was to vary by observer and time, but nearly two centuries after his death, he began to take on increased importance with the emergence of the Indian independence movement, as many Indian nationalists elevated him as a proto-nationalist and hero of the Hindus.\""
+      },
+      "query": "Given a reference text about Shivaji, tell me when they were born, when they died, what their most notable accomplishment and what people called them post-death.",
+      "response": "Shivaji was born on 19th February 1630 and died on 3rd April 1680. Shivaji accomplished to  out his own independent kingdom from the declining Adilshahi sultanate of Bijapur which formed the genesis of the Maratha Empire. He is called as proto-nationalist and hero of the Hindus."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Survivor is a reality-competition television franchise produced in many countries around the world. The show features a group of contestants deliberately marooned in an isolated location, where they must provide basic survival necessities for themselves. The contestants compete in challenges for rewards and immunity from elimination. The contestants are progressively eliminated from the game as they are voted out by their fellow contestants until only one remains to be awarded the grand prize and named the \\\"Sole Survivor\\\".\""
+      },
+      "query": "Who is the 'sole Survivor' on the TV Show Survivor?",
+      "response": "The contestants are progressively eliminated from the game as they are voted out by their fellow contestants until only one remains to be awarded the grand prize and named the \"Sole Survivor\"."
+    },
+    {
+      "prompt_slug": "closed_qa/v3",
+      "context": {
+        "information": "\"August 15, 1947\""
+      },
+      "query": "Given this paragraph about battles during India Independence day, what was the date when India win the Independence",
+      "response": "Independence Day is celebrated annually on 15 August as a public holiday in India commemorating the nation's independence from the United Kingdom on 15 August 1947, the day when the provisions of the Indian Independence Act, which transferred legislative sovereignty to the Indian Constituent Assembly, came into effect. India retained King George VI as head of state until its transition to a republic, when the Constitution of India came into effect on 26 January 1950 (celebrated as Indian Republic Day) and replaced the dominion prefix, Dominion of India, with the enactment of the sovereign law Constitution of India. India attained independence following the independence movement noted for largely non-violent resistance and civil disobedience."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"In Seattle, Jackson worked as an ad executive at a magazine and did some theater work on the side, earning his Equity card. \\\"As soon as I found out what theater was, what Broadway was, I thought, 'Oh, that's what I'll do with my life.' Just a matter of getting all the pieces in place\\\", he said. Inspired to rethink his career after the September 11 attacks, he moved to New York City to pursue his dream of being an actor: \\\"[Acting] was something I always wanted to do but I was too scared and didn't have the confidence. 9/11 changed everything for all of us. It gave me the urgency.\\\"\""
+      },
+      "query": "What made Jackson decide to pursue acting?",
+      "response": "The occurrence of the September 11 attacks"
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"The school was opened in 1966 under the name John F. Kennedy High School. It was Plainview's second high school. Originally, all senior high school students went to Plainview High School, but were split by residential location when JFK High School opened. In 1991, Plainview-Old Bethpage High School and John F. Kennedy High School were merged into the John F. Kennedy High School building. The school was renamed Plainview-Old Bethpage John F. Kennedy High School. The newly merged school abandoned Plainview High School's colors of green and white in favor of John F. Kennedy's blue and white. Both the original Plainview High School mascot, the Gulls, and the John F. Kennedy High School mascot, the Eagles, were replaced with a new mascot, The Hawks. It is now the only public high school for residents of the community of Plainview and Old Bethpage.\""
+      },
+      "query": "here is a short history of Plainview \u2013 Old Bethpage John F. Kennedy High School, which color was changed when the name changed in 1991?",
+      "response": "The school colors swapped out green for blue and white stayed the same."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"The first modern swim/bike/run event was held at Mission Bay, San Diego, California on September 25, 1974. The race was conceived and directed by two members of the San Diego Track Club, Jack Johnstone and Don Shanahan. Johnstone recalls that he was a part of the 70s jogging craze in America and that after entering a few races he was not regaining his \\\"mediocre fitness\\\" despite having been a member of the 1957 Collegiate and AAU All-American swim teams. Then in 1973, Johnstone learned of the Dave Pain Birthday Biathlon, a 7.2 km (4.5 mi) run followed by what was billed as a quarter-mile (0.4 km) swim (the actual distance was only between 200 and 300 yards). The following year, after competing in the event for the second time and placing in the top ten, Johnstone desired more of this style of race and with equal emphasis on the swim. So he petitioned the chairman of the San Diego Track Club who told him he would add a race to the club calendar. But the rest of the race was up to Johnstone to organise, and at the same time he was to contact Don Shanahan so there wouldn't be too many \\\"weird\\\" races on the club schedule. Shanahan told Johnstone that he wanted to include a biking leg to the race; whilst hesitant Johnstone agreed to the addition. When naming the event the pair used the unofficially agreed naming system for multisport events, already used for pentathlon, heptathlon, and decathlon. So they used the Greek prefix tri (three) for the number of events, followed by the already familiar athlon, hence naming the event the Mission Bay Triathlon. It is worthy of note that neither founder had heard of the French events; both believed their race was a unique idea.\\n\\nOn Wednesday, September 25, 1974, the race started. It began with a run of a 4.8 km (3 mi) loop, followed by biking twice around Fiesta Island for a total of 8.0 km (5 mi). Entrants would then get off the bikes, take their shoes off and run into the water to swim to the mainland. That was followed by running in bare feet, then swimming again along the bay, then one last swim up to the entrance of Fiesta Island, and a final crawl up a steep dirt bank to finish. Most participants were not skilled swimmers, so Johnstone recruited his 13-year-old son to float on his surfboard and act as lifeguard. Some participants took longer than expected, and it began to get dark as they finished their swims. Shanahan recalls they pulled up a few cars and turned on the headlights so the athletes could see. Johnstone and Shanahan were surprised by the large number of entrants (46), mainly coming from local running clubs. Two notable entrants, Judy and John Collins, would four years later found the event which brought international attention to the new sport: the Hawaii Ironman.\""
+      },
+      "query": "Given a reference text on the beginnings of triathlon, tell me where the event was first held, in what year, and what sport was first in the sequence of the race.",
+      "response": "The first triathlon occurred in San Diego, California in 1974. Unlike today's events, the triathlon began with a run."
+    },
+    {
+      "prompt_slug": "closed_qa/v2",
+      "context": {
+        "information": "\"Kevum or Kavum is a deep-fried Sri Lankan sweet made from rice flour and kithul (sugar-palm) treacle, with a number of variants adding additional ingredients. It is also known as oil cake. Kevum is traditionally given and consumed during celebrations of Sinhala and Tamil New Year.\""
+      },
+      "query": "Given this paragraph about Kevum, explain when it is typically consumed?",
+      "response": "It's consumed usually for Sinahala and Tamil celebrations. Particularly, the New Year."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Agriculture encompasses crop and livestock production, aquaculture, fisheries and forestry for food and non-food products. Agriculture was the key development in the rise of sedentary human civilization, whereby farming of domesticated species created food surpluses that enabled people to live in cities. While humans started gathering grains at least 105,000 years ago, nascent farmers only began planting them around 11,500 years ago. Sheep, goats, pigs and cattle were domesticated around 10,000 years ago. Plants were independently cultivated in at least 11 regions of the world. In the twentieth century, industrial agriculture based on large-scale monocultures came to dominate agricultural output.\""
+      },
+      "query": "Based on the information below, when might people have started baking bread?",
+      "response": "There is not enough information in the passage to determine exactly when this would have happened, but because bread requires grain, it could not have been made prior to 105,000 years ago when humans first started gathering grain."
+    },
+    {
+      "prompt_slug": "closed_qa/v3",
+      "context": {
+        "information": "\"Jiang Zemin (17 August 1926 \\u2013 30 November 2022) was a Chinese politician who served as general secretary of the Chinese Communist Party (CCP) from 1989 to 2002, as chairman of the Central Military Commission from 1989 to 2004, and as president of China from 1993 to 2003. Jiang was paramount leader of China from 1989 to 2002. He was the core leader of the third generation of Chinese leadership, one of four core leaders alongside Mao Zedong, Deng Xiaoping and Xi Jinping.\\n\\nBorn in Yangzhou, Jiangsu, Jiang joined the CCP while he was in college. After the establishment of the People's Republic of China in 1949, he received training at the Stalin Automobile Works in Moscow in the 1950s, later returning to Shanghai in 1962 to serve in various institutes, later being sent between 1970-1972 to Romania as part of an expert team to establish machinery manufacturing plants in the country. After 1979, he was appointed as the vice chair of two commissions by vice premier Gu Mu to oversee the newly-established special economic zones (SEZs). He became the vice minister of the newly-established Ministry of Electronics Industry and a member of the CCP Central Committee in 1982.\\n\\nJiang was appointed as the mayor of Shanghai in 1985, later being promoted to its Communist Party secretary, as well as a member of the CCP Politburo, in 1987. Jiang came to power unexpectedly as a compromise candidate following the 1989 Tiananmen Square protests and massacre, when he replaced Zhao Ziyang as CCP general secretary after Zhao was ousted for his support for the student movement. As the involvement of the \\\"Eight Elders\\\" in Chinese politics steadily declined, Jiang consolidated his hold on power to become the \\\"paramount leader\\\" in the country during the 1990s. Urged by Deng Xiaoping's southern tour in 1992, Jiang officially introduced the term \\\"socialist market economy\\\" in his speech during the 14th CCP National Congress held later that year, which accelerated \\\"opening up and reform\\\".\\n\\nUnder Jiang's leadership, China experienced substantial economic growth with the continuation of market reforms. The returning of Hong Kong from the United Kingdom in 1997 and of Macau from Portugal in 1999, and entry into the World Trade Organisation in 2001, were landmark moments of his era. China also witnessed improved relations with the outside world, while the Communist Party maintained its tight control over the state. Jiang faced criticism over human rights abuses, including the crackdown on the Falun Gong movement. His contributions to party doctrine, known as the \\\"Three Represents\\\", were written into the CCP constitution in 2002. Jiang gradually vacated his official leadership titles from 2002 to 2005, being succeeded in these roles by Hu Jintao, although he and his political faction continued to influence affairs until much later. On 30 November 2022, Jiang died from leukemia and multiple organ failure in Shanghai.\""
+      },
+      "query": "What was Jiang's previous position before becoming the president of China?",
+      "response": "He was the mayor of Shanghai and then became Communist Party secretary"
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Fleabag is a British comedy-drama television series created and written by Phoebe Waller-Bridge, based on her one-woman show first performed in 2013 at the Edinburgh Fringe Festival. It was originally produced by Two Brothers Pictures for digital channel BBC Three in a co-production agreement with Amazon Studios. Waller-Bridge stars as the title character, a free-spirited but angry and confused young woman in London. Sian Clifford stars as Fleabag's sister Claire, while Andrew Scott joined the cast in the second series as 'Hot Priest'. The protagonist frequently breaks the fourth wall to provide exposition, internal monologues, and a running commentary to the audience.\""
+      },
+      "query": "Who wrote the TV show Fleabag?",
+      "response": "Fleabag is a British comedy-drama television series created and written by Phoebe Waller-Bridge."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"The Bobcaygeon Independent was the weekly community newspaper in Bobcaygeon, Ontario, Canada. It was established in 1869. Ownership changed hands many times over the years, until it was purchased along with then owner, Citizens Communication Group, in 2000 by Metroland Publishing.\\n\\nThe Independent covered everything from community events, school issues & family milestones to local crimes and tragedies. During ownership by the Citizens Communication Group, the Bobcaygeon and Fenelon news teams worked closely together, and from time to time, some stories of general interest would run simultaneously in the Independent and its sister paper the Fenelon Falls Gazette. During ownership by Metroland Publishing, a similar news style was used with common pages in both Bobcaygeon and Fenelon papers, and in the Lindsay This Week newspaper.\\n\\nThe paper was officially incorporated into Kawartha Lakes This Week in late 2004 in keeping with the amalgamation of Lindsay, Bobcaygeon and Fenelon Falls into the City of Kawartha Lakes.\\n\\nToday, back issues are available at the Bobcaygeon Public Library for viewing on Microfiche, as far back as the first issue in 1869.\\n\\nAlthough the paper had ceased publication in 2004, the website Amazon.com still offers subscriptions.\""
+      },
+      "query": "Given a refrence text about The Bobcaygeon Independent, tell me when it was established and when it ceased publication.",
+      "response": "The Bobcaygeon Independent was established in 1869 and ceased publication in 2004."
+    },
+    {
+      "prompt_slug": "closed_qa/v2",
+      "context": {
+        "information": "\"The Boston Marathon began on 19 April 1897, and was inspired by the success of the first marathon competition in the 1896 Summer Olympics. It is the world's oldest run annual marathon, and ranks as one of the world's most prestigious road racing events. Its course runs from Hopkinton in southern Middlesex County, to Copley Square in Boston. Johnny Hayes' victory at the 1908 Summer Olympics also contributed to the early growth of long-distance running and marathoning in the United States. Later that year, races around the holiday season including the Empire City Marathon held on New Year's Day 1909 in Yonkers, New York, marked the early running craze referred to as \\\"marathon mania\\\". Following the 1908 Olympics, the first five amateur marathons in New York City were held on days that held special meanings: Thanksgiving Day, the day after Christmas, New Year's Day, Washington's Birthday, and Lincoln's Birthday.\\n\\nFrank Shorter's victory in the marathon at the 1972 Summer Olympics would spur national enthusiasm for the sport more intense than that which followed Hayes' win 64 years earlier. In 2014, an estimated 550,600 runners completed a marathon within the United States. This can be compared to 143,000 in 1980. Today marathons are held all around the world on a nearly weekly basis.\""
+      },
+      "query": "What is the world's oldest annual marathon based on the reference text below?",
+      "response": "The Boston Marathon is the world's oldest annual marathon, beginning on April 19th 1897."
+    },
+    {
+      "prompt_slug": "closed_qa/v1",
+      "context": {
+        "information": "\"Palm Cove is located in Far North Queensland on the Australian coast. It has a long sandy beach along most of its seafront except for the rocky headland around Buchan Point in the north of the suburb.\""
+      },
+      "query": "Where in Australia is Palm Cove located?",
+      "response": "Palm Cove is located in Far North Queensland on the Australian coast."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Major League Baseball (MLB) is a professional baseball organization and the oldest major professional sports league in the world.[B] MLB is composed of 30 teams, divided equally between the National League (NL) and the American League (AL), with 29 in the United States and 1 in Canada. Formed in 1876 and 1901 respectively, the NL and AL cemented their cooperation with the National Agreement in 1903. They remained legally separate entities until 2000, when they merged into a single organization led by the Commissioner of Baseball. MLB is headquartered in Midtown Manhattan. It is considered one of the major professional sports leagues in the United States and Canada. \\n\\nEach team plays 162 games per season, and six teams in each league advance to a four-round postseason tournament that culminates in the World Series, a best-of-seven championship series between the two league champions first played in 1903. The New York Yankees have the most championships: 27. The reigning champions are the Houston Astros, who defeated the Philadelphia Phillies, 4\\u20132, in the 2022 World Series.\""
+      },
+      "query": "Given this text about Major League Baseball, how many games do teams play in the regular season and how many games are played in the World Series.",
+      "response": "Each team will play 162 games per regular season, with the two top teams playing a best of seven in the World Series Championship."
+    },
+    {
+      "prompt_slug": "closed_qa/v3",
+      "context": {
+        "information": "\"The village school was closed during much of the war but re-opened in autumn 1944. Gorbachev did not want to return but when he did he excelled academically. He read voraciously, moving from the Western novels of Thomas Mayne Reid to the works of Vissarion Belinsky, Alexander Pushkin, Nikolai Gogol, and Mikhail Lermontov. In 1946, he joined the Komsomol, the Soviet political youth organization, becoming leader of his local group and then being elected to the Komsomol committee for the district. From primary school he moved to the high school in Molotovskoye; he stayed there during the week while walking the 19 km (12 mi) home during weekends. As well as being a member of the school's drama society, he organized sporting and social activities and led the school's morning exercise class. Over the course of five consecutive summers from 1946 onward he returned home to assist his father in operating a combine harvester, during which they sometimes worked 20-hour days. In 1948, they harvested over 8,000 centners of grain, a feat for which Sergey was awarded the Order of Lenin and his son the Order of the Red Banner of Labour.\""
+      },
+      "query": "Based on this passage, how many miles did Gorbachev walk each week for his round trip commute to school?",
+      "response": "According to this passage, Gorbachev's round trip walking commute to school was 24 miles per week. He walked 12 miles each way and travelled to and from school only once per week."
+    },
+    {
+      "prompt_slug": "closed_qa/v3",
+      "context": {
+        "information": "\"Our Common Future, also known as the Brundtland Report, was published on October 1987 by the United Nations through the Oxford University Press. This publication was in recognition of Gro Harlem Brundtland's, former Norwegian Prime Minister, role as Chair of the World Commission on Environment and Development (WCED).\\n\\nIts targets were multilateralism and interdependence of nations in the search for a sustainable development path. The report sought to recapture the spirit of the Stockholm Conference which had introduced environmental concerns to the formal political development sphere. Our Common Future placed environmental issues firmly on the political agenda; it aimed to discuss the environment and development as one single issue.\\n\\nThe document was the culmination of a \\\"900-day\\\" international exercise which catalogued, analysed, and synthesised written submissions and expert testimony from \\\"senior government representatives, scientists and experts, research institutes, industrialists, representatives of non-governmental organizations, and the general public\\\" held at public hearings throughout the world.\\n\\nThe report defined 'sustainable development' as \\\"Development that meets the needs of the present without compromising the ability of future generations to meet their own needs\\\".\""
+      },
+      "query": "Given a reference text about Our Common Future, what was the purpose of the report?",
+      "response": "The purpose of the Our Common Future report was to focus on environmental issues on the political agenda and to discuss sustainable development."
+    },
+    {
+      "prompt_slug": "closed_qa/v3",
+      "context": {
+        "information": "\"The Davie School (also known as the Old Davie School) is a historic school in Davie, Florida, USA. It is located at 6650 Griffin Road. It was designed by August Geiger. It opened its doors in 1918 to 90 students, and was in continuous use as a school until 1978. On March 29, 1988, it was added to the U.S. National Register of Historic Places. It is the oldest extant school building in Broward County.\\n\\nSchool building\\nThe architect Geiger was hired by the school board in 1917 and presented them with his plans for the school that September. It is a T-shaped two-story building constructed of concrete with a textured stucco finish. The building has a hip roof with a surrounding parapet. Architectural elements include horseshoe and bell-shaped openings, raised bands of stucco and multiple panel windows.\""
+      },
+      "query": "Given a reference text about the Davie School, tell me when it was added to the register of historic places and when it was open and closed..",
+      "response": "The Davie School opened in 1918 and closed in 1978. It was added to the U.S. National Register of Historic places on March 29, 1988."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Lee Ji-eun (Korean: \\uc774\\uc9c0\\uc740; born May 16, 1993), also known by her stage name IU (Korean: \\uc544\\uc774\\uc720), is a South Korean singer-songwriter, record producer, and actress. She signed with LOEN Entertainment (now Kakao Entertainment) in 2007 as a trainee and debuted as a singer at the age of fifteen with her first extended play (EP) Lost and Found (2008). Although her follow-up albums, Growing Up and IU...IM, brought mainstream success, it was only after the release of \\\"Good Day\\\" (Korean: \\uc88b\\uc740 \\ub0a0), the lead single from her 2010 album Real, that she achieved national stardom. \\\"Good Day\\\" went on to spend five consecutive weeks at the top of South Korea's Gaon Digital Chart, and in 2019, it was ranked number one on Billboard's \\\"100 Greatest K-Pop Songs of the 2010s\\\" list.\\n\\nLost and Found is the debut extended play (EP) by South Korean singer-songwriter IU. It was released by LOEN Entertainment on September 23, 2008. IU collaborated with lyricist and producer Choi Gap-won, who had previously produced songs including \\\"Amnesia\\\" by Gummy, \\\"Incurable Disease\\\" by Wheesung, and \\\"Toc Toc Toc\\\" by Lee Hyori. Lee Jong-hoon of Soul-Shop and the singer Mario additionally worked on the title song, \\\"Lost Child\\\".\""
+      },
+      "query": "Given a reference text about a singer, tell me when they debuted, what their first release was, and what their most popular song is.",
+      "response": "The singer Lee Ji-eun, or better known as IU, debuted on September 23, 2008 with her first extended play \"Lost and Found\". Her most popular song is \"Good Day\" from her 2010 album \"Real\" which was ranked number one on Billboard's \"100 Greatest K-Pop Songs of the 2010s\" list."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Hendrik \\\"Erik\\\" Dekker (born 21 August 1970) is a retired Dutch professional road racing cyclist active from 1992 until 2006. He was a member of the Rabobank cycling team from 1992 till 2006. From 2007 to 2015 he was one of Rabobank's team managers.\\n\\nCycling career\\nAmateur career\\nDekker rode his first race at eight, and soon became successful. In 1985 he was invited to join the national selection for juniors. As an amateur, his most important results were second places at the youth world championships in Bergamo in 1987 and at the road race in the 1992 Summer Olympics. In that Olympic road race, Dekker got away at 30 km before the finish, together with Fabio Casartelli and Dainis Ozols. Dekker was outsprinted by Casartelli, but was so happy that he won a medal that he also finished with his arms in the air.\\n\\nDirectly after the Olympic Games, he became professional, and rode his first race a few weeks later in the Tour de l'Avenir.\\n\\nProfessional career\\nHis first win as a professional was a stage of the Tour of the Basque Country of 1994, the year he rode his first Tour de France. In 1997 Dekker won the Ronde van Nederland, but a large part of 1998 was lost because of injuries.\\n\\nThe year 2000 was Dekker's best. He won three stages in the 2000 Tour de France, although neither a sprinter nor a favourite for the overall win, and was voted most combative cyclist. In the autumn of that year, Dekker won his first classic, the Cl\\u00e1sica de San Sebasti\\u00e1n.\\n\\nIn 2001 Dekker won the Amstel Gold Race and the UCI Road World Cup. In the 2001 Tour de France he took a stage, after having helped his teammate Marc Wauters to a stage win. At the end of the year he was named Dutch Sportsman of the year.\\n\\nThe years 2002 and 2003 were less successful because of injuries. He came back in 2004 in the spring classics and a victory in Paris\\u2013Tours. He had announced his retirement for the autumn of 2006, but he crashed heavily in the 2006 Tour de France and decided to stop.\\n\\nManaging career\\nIn 2007, Dekker started as team manager of the Rabobank team. At the end of the 2015 season, he left the team.\""
+      },
+      "query": "Tell me about the career of Erik Dekker",
+      "response": "Hendrik \"Erik\" Dekker (born 21 August 1970) is a retired Dutch professional road racing cyclist active from 1992 until 2006. He was a member of the Rabobank cycling team from 1992 till 2006. From 2007 to 2015 he was one of Rabobank's team managers.\n\nCycling career\nAmateur career\nDekker rode his first race at eight, and soon became successful. In 1985 he was invited to join the national selection for juniors. As an amateur, his most important results were second places at the youth world championships in Bergamo in 1987 and at the road race in the 1992 Summer Olympics. In that Olympic road race, Dekker got away at 30 km before the finish, together with Fabio Casartelli and Dainis Ozols. Dekker was outsprinted by Casartelli, but was so happy that he won a medal that he also finished with his arms in the air.\n\nDirectly after the Olympic Games, he became professional, and rode his first race a few weeks later in the Tour de l'Avenir.\n\nProfessional career\nHis first win as a professional was a stage of the Tour of the Basque Country of 1994, the year he rode his first Tour de France. In 1997 Dekker won the Ronde van Nederland, but a large part of 1998 was lost because of injuries.\n\nThe year 2000 was Dekker's best. He won three stages in the 2000 Tour de France, although neither a sprinter nor a favourite for the overall win, and was voted most combative cyclist. In the autumn of that year, Dekker won his first classic, the Cl\u00e1sica de San Sebasti\u00e1n.\n\nIn 2001 Dekker won the Amstel Gold Race and the UCI Road World Cup. In the 2001 Tour de France he took a stage, after having helped his teammate Marc Wauters to a stage win. At the end of the year he was named Dutch Sportsman of the year.\n\nThe years 2002 and 2003 were less successful because of injuries. He came back in 2004 in the spring classics and a victory in Paris\u2013Tours. He had announced his retirement for the autumn of 2006, but he crashed heavily in the 2006 Tour de France and decided to stop.\n\nManaging career\nIn 2007, Dekker started as team manager of the Rabobank team. At the end of the 2015 season, he left the team."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Arlington Public Schools operates the county's public K-12 education system of 22 elementary schools; 6 middle schools (Dorothy Hamm Middle School, Gunston Middle School, Kenmore Middle School, Swanson Middle School, Thomas Jefferson Middle School, and Williamsburg Middle School); and 3 public high schools (Wakefield High School, Washington-Liberty High School, and Yorktown High School). H-B Woodlawn and Arlington Tech are alternative public schools. Arlington County spends about half of its local revenues on education. For the FY2013 budget, 83 percent of funding was from local revenues, and 12 percent from the state. Per pupil expenditures are expected to average $18,700, well above its neighbors, Fairfax County ($13,600) and Montgomery County ($14,900).\""
+      },
+      "query": "Given this paragraph, how many public high schools are in Arlington, Virginia?",
+      "response": "There are 3 public high schools in Arlington, Va."
+    },
+    {
+      "prompt_slug": "closed_qa/v2",
+      "context": {
+        "information": "\"Scholars generally acknowledge six cradles of civilization. Mesopotamia, Ancient Egypt, Indus Valley, and Ancient China are believed to be the earliest in the Old World. Cradles of civilization in the New World are the Caral-Supe civilization of coastal Peru and the Olmec civilization of Mexico. All of the cradles of civilization depended upon agriculture for sustenance (except possibly Caral-Supe which may have depended initially on marine resources). All depended upon farmers producing an agricultural surplus to support the centralized government, political leaders, priests, and public works of the urban centers of the civilization.\\n\\nLess formally, the term \\\"cradle of civilization\\\" is often used to refer to other historic ancient civilizations, such as Greece or Rome, which have both been called the \\\"cradle of Western civilization\\\".\""
+      },
+      "query": "What is the oldest known civilization?",
+      "response": "The oldest known human civilizations are known to exist in Mesopotamia (Modern day Iraq), Indus Valley (a region located in modern-day Pakistan), Ancient Egypt and Ancient China."
+    },
+    {
+      "prompt_slug": "closed_qa/v3",
+      "context": {
+        "information": "\"A hot dog (commonly spelled hotdog) is a food consisting of a grilled or steamed sausage served in the slit of a partially sliced bun. The term hot dog can refer to the sausage itself. The sausage used is a wiener (Vienna sausage) or a frankfurter (Frankfurter W\\u00fcrstchen, also just called frank). The names of these sausages commonly refer to their assembled dish. Some consider a hot dog to technically be a sandwich. Hot dog preparation and condiments vary worldwide. Typical condiments include mustard, ketchup, relish, onions in tomato sauce, and cheese sauce. Common garnishes include sauerkraut, diced onions, jalape\\u00f1os, chili, grated cheese, coleslaw, bacon, and olives. Hot dog variants include the corn dog and pigs in a blanket. The hot dog's cultural traditions include the Nathan's Hot Dog Eating Contest and the Oscar Mayer Wienermobile.\\n\\nThese types of sausages were culturally imported from Germany and became popular in the United States. It became a working-class street food in the U.S., sold at stands and carts. The hot dog became closely associated with baseball and American culture. Although particularly connected with New York City and its cuisine, the hot dog eventually became ubiquitous throughout the US during the 20th century. Its preparation varies regionally in the country, emerging as an important part of other regional cuisines, including Chicago street cuisine.\""
+      },
+      "query": "What are the common toppings that can go on a hotdog?",
+      "response": "Common toppings or garnishes include sauerkraut, diced onions, jalape\u00f1os, chili, grated cheese, coleslaw, bacon, and olives"
+    },
+    {
+      "prompt_slug": "closed_qa/v3",
+      "context": {
+        "information": "\"Ons Jabeur was born to Samira and Ridha Jabeur in Ksar Hellal, a small town in Tunisia. She grew up in the larger nearby coastal town of Sousse. Jabeur has two older brothers, Hatem and Marwen, and an older sister, Yasmine. Her mother played tennis recreationally and introduced her to the sport at the age of three. Jabeur trained under coach Nabil Mlika for ten years from ages four to thirteen, originally starting to work with him at a tennis promotion centre at her school. When she was ten years old, her club did not have their own tennis courts and she could only train on courts at nearby hotels. At twelve years old, Jabeur moved to the capital city of Tunis to train at the Lyc\\u00e9e Sportif El Menzah, a national sport high school for the country's up-and-coming athletes, where she stayed for several years.\\n\\nShe also later trained in Belgium and France starting at the age of 16. Jabeur credits her parents for the sacrifices they made when she was growing up, saying, \\\"My parents sacrificed a lot of things \\u2013 my mom used to drive me everywhere around Tunisia to go play the tournaments, and she encouraged me to go to a special school to study. That was a big sacrifice to see her little girl going for a dream that, honestly, wasn't 100% guaranteed. She believed in me and gave me the confidence to be there.\\\"\""
+      },
+      "query": "What sacrifices did Ons's parents make to help her tennis career?",
+      "response": "Ons's mother used to drive Ons all around Tunisia to play tennis tournaments and encouraged Ons to go to a special school to study."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"The British Bull Dog was a popular type of solid-frame pocket revolver introduced by Philip Webley & Son of Birmingham, England, in 1872, and subsequently copied by gunmakers in continental Europe and the United States. It featured a 2.5-inch (64 mm) barrel and was chambered for .442 Webley or .450 Adams cartridges, with a five-round cylinder. Webley produced smaller scaled .320 Revolver and .380 calibre versions later, but did not mark them with the British Bull Dog name.\""
+      },
+      "query": "Measured in feet, what was the length of the gun barrel produced by Philip Webley & Son of Birmingham discussed in the above passage?",
+      "response": "0.208 feet"
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Evidence of human colonization in Sri Lanka appears at the site of Balangoda. Balangoda Man arrived on the island about 125,000 years ago and has been identified as Mesolithic hunter-gatherers who lived in caves. Several of these caves, including the well-known Batadombalena and the Fa Hien Cave, have yielded many artifacts from these people, who are currently the first known inhabitants of the island.\\n\\nBalangoda Man probably created Horton Plains, in the central hills, by burning the trees in order to catch game. However, the discovery of oats and barley on the plains at about 15,000 BCE suggests that agriculture had already developed at this early date.\\n\\nSeveral minute granite tools (about 4 centimetres in length), earthenware, remnants of charred timber, and clay burial pots date to the Mesolithic. Human remains dating to 6000 BCE have been discovered during recent excavations around a cave at Warana Raja Maha Vihara and in the Kalatuwawa area.\""
+      },
+      "query": "Given this paragraph about the prehistory of Sri Lanka, what are the evidence for prehistoric human colonization in Sri Lanka?",
+      "response": "The oldest prehistoric evidence of human colonization in Sri Lanka goes back to about 125,000 years to a man named Balangoda Man. He was a Mesolithic hunter-gatherer who lived in caves. Furthermore, human remains dating back to 6000 BCE have also been found in several cites in the country."
+    },
+    {
+      "prompt_slug": "closed_qa/v2",
+      "context": {
+        "information": "\"The team was founded in 1972 in Atlanta as the Atlanta Flames before relocating to Calgary in 1980. The Flames played their first three seasons in Calgary at the Stampede Corral before moving into the Scotiabank Saddledome (originally the Olympic Saddledome) in 1983. In 1985\\u201386, the Flames became the first Calgary team since the 1923\\u201324 Tigers to compete for the Stanley Cup. In 1988\\u201389, the Flames won their first and only Stanley Cup title. The Flames' unexpected run to the 2004 Stanley Cup Finals gave rise to the Red Mile, and in 2011, the team hosted and won the second Heritage Classic outdoor game.\""
+      },
+      "query": "Given this paragraph about the history of the Calgary Flames hockey team, what year did the Calgary Flames win their only Stanley Cup",
+      "response": "The Calgary Flames won their only Stanley Cup in 1989"
+    },
+    {
+      "prompt_slug": "closed_qa/v1",
+      "context": {
+        "information": "\"The Bobcaygeon Independent was the weekly community newspaper in Bobcaygeon, Ontario, Canada. It was established in 1869. Ownership changed hands many times over the years, until it was purchased along with then owner, Citizens Communication Group, in 2000 by Metroland Publishing.\\n\\nThe Independent covered everything from community events, school issues & family milestones to local crimes and tragedies. During ownership by the Citizens Communication Group, the Bobcaygeon and Fenelon news teams worked closely together, and from time to time, some stories of general interest would run simultaneously in the Independent and its sister paper the Fenelon Falls Gazette. During ownership by Metroland Publishing, a similar news style was used with common pages in both Bobcaygeon and Fenelon papers, and in the Lindsay This Week newspaper.\\n\\nThe paper was officially incorporated into Kawartha Lakes This Week in late 2004 in keeping with the amalgamation of Lindsay, Bobcaygeon and Fenelon Falls into the City of Kawartha Lakes.\\n\\nToday, back issues are available at the Bobcaygeon Public Library for viewing on Microfiche, as far back as the first issue in 1869.\\n\\nAlthough the paper had ceased publication in 2004, the website Amazon.com still offers subscriptions.\""
+      },
+      "query": "Given a refrence text about The Bobcaygeon Independent, tell me when it was established and when it ceased publication.",
+      "response": "The Bobcaygeon Independent was established in 1869 and ceased publication in 2004."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Shah starred on the reality television series The Real Housewives of Salt Lake City, which premiered in November 2020. In March 2021, she was criminally charged with conspiracy to commit money laundering and wire fraud, pleading not guilty to both charges days later. Her legal case was chronicled in the documentary film Housewife and the Shah Shocker, which premiered on Hulu in November that same year. In July 2022, Shah pleaded guilty to conspiracy to commit wire fraud. In January 2023, Shah was sentenced to six-and-a-half years in prison. Shah began her prison sentence the following month.\""
+      },
+      "query": "Given a reference text about Jen Shah, what is she famous from, when was she criminally charged, what was the verdict, and when was she sentenced.",
+      "response": "Jen Shah came into the spotlight in November 2020 when The Real Housewives of Salt Lake City aired. In March 2021 she was charged with conspiracy to commit money laundering as well as wire fraud. She pled not guilty, but then come July 2022 she plead guilty to commit wire fraud. January of 2023 she was sentenced to 6.5 years in prison and her sentence began in February."
+    },
+    {
+      "prompt_slug": "closed_qa/v3",
+      "context": {
+        "information": "\"English congregationalist preacher Rev. William Davis found some success evangelizing the miners and their families after establishing a church in Guston in 1892, the only one in the Red Mountain Mining District. The church had not only a bell but also a steam whistle to announce when services were commencing. Davis had earlier tried unsuccessfully to establish a church in Red Mountain Town. The day after the Guston church opened, the commercial district of Red Mountain Town was destroyed in a fire, with some local residents suggesting it was the result of \\\"divine intervention\\\". Between 1941 and 1945, the by-then abandoned Guston church had begun to tilt heavily, eventually collapsing.\""
+      },
+      "query": "Given this paragraph about the original church in Guston in 1892, what were the two ways that were used to announce the beginning of services?",
+      "response": "The church used both a bell and a steam whistle to announce the start of services."
+    },
+    {
+      "prompt_slug": "closed_qa/v2",
+      "context": {
+        "information": "\"Kieran Liam McAnespie (born 11 September 1979) is a football manager and former player. Capable of playing as a full-back or winger, he appeared in the Scottish Premier League for St Johnstone and Hearts. Born in England, he represented the Scotland U21 national team internationally\""
+      },
+      "query": "Where does Kieran Liam McAnespie come from?",
+      "response": "Kieran Liam McAnespie was born in England."
+    },
+    {
+      "prompt_slug": "closed_qa/v2",
+      "context": {
+        "information": "\"Food historian Lois Ellen Frank calls potatoes, tomatoes, corn, beans, squash, chili, cacao, and vanilla the \\\"magic eight\\\" ingredients that were found and used only in the Americas before 1492 and were taken via the Columbian Exchange back to the Old World, dramatically transforming the cuisine there. According to Frank,\\nIf we deconstruct that these foods were inherently native, then that means that the Italians didn't have the tomato, the Irish didn't have the potato, half the British National Dish\\u2014Fish and Chips\\u2014didn't exist. The Russians didn't have the potato, nor did they have vodka from the potato. There were no chiles in any Asian cuisine anywhere in the world, nor were there any chiles in any East Indian cuisine dishes, including curries. And the French had no confection using either vanilla or chocolate. So the Old World was a completely different place.\""
+      },
+      "query": "Spanish patatas bravas are potatoes served with a red sauce made with tomatoes and chilis. Could patatas bravas have existed in 1490?",
+      "response": "No, patatas bravas could not have existed in 1490. This is because in 1490 the Americas had not yet been visited by Europeans, and so Spaniards didn't have access to the potatoes, tomatoes or chilis present in the dish, because those plants are all from the Americas originally."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"As a member of the 3rd Infantry Regiment and 17th Infantry Regiment, McGunnegle served in the Philippines during the Philippine\\u2013American War. After receiving promotion to colonel in 1906, he commanded the 1st Infantry Regiment during service in Washington, the Philippines, and Hawaii. In 1914, he was assigned to command the recruit depot at Fort McDowell, California. He served until recaching the mandatory retirement age of 64 in June 1918. Because World War I was ongoing, McGunnegle agreed to defer retirement and remained on duty at Fort McDowell. The war ended in November 1918, and he remained in command of Fort McDowell to muster out troops as the army demobilized. He retired in July 1919.\""
+      },
+      "query": "Given this short paragraph about the life of George K. McGunnegle, how old was he when he retired and what month of the year did that happen?",
+      "response": "George K. McGunnegle was 64 when he retired in July of 1919."
+    },
+    {
+      "prompt_slug": "closed_qa/v2",
+      "context": {
+        "information": "\"In September 2002, the Tunisian Football Federation announced that it was finalizing a contract with former France manager Roger Lemerre. Tunisia hosted the 2004 African Cup of Nations, winning the group. They defeated Senegal in the quarter-finals, and Nigeria in the semi-finals. Tunisia built a 1\\u20130 lead after four minutes with Mehdi Nafti's concentration pushed by Francileudo Santos, before Morocco levelled. Tunisia restored their lead, giving them their first African Cup of Nations title. They also won the CAF's African National Team of the Year award. Lemerre became the first manager to win two different continental tournaments, having previously won Euro 2000 with France.\\n\\nAs a result, Tunisia qualified for the 2005 FIFA Confederations Cup in Germany, playing the hosts, Argentina and Australia. The only points they would win was a victory over Australia. Before their 2006 World Cup appearance, Lemerre took the Tunisians to a training camp in Switzerland, where they played international friendlies against Swiss clubs. Tunisia would only record one draw in Germany, against Saudi Arabia, losing against Spain and Ukraine\""
+      },
+      "query": "What are the two different continental tournaments that Roger Lemerre won ?",
+      "response": "Roger Lemerre won the Euro 2000 with France and the African Cup of Nations 2004 with Tunisia"
+    },
+    {
+      "prompt_slug": "closed_qa/v3",
+      "context": {
+        "information": "\"Omar ibn Said was a real person, born and raised in Futa Toro, an Islamic state located in the part of West Africa that is now Senegal. His family was wealthy and he was highly educated as a Muslim scholar. He was captured by slavers in 1807 at the age of 37 and was taken to America to be sold in the Charleston slave market. Initially purchased by a harsh master, he escaped after two years and traveled to Fayetteville, North Carolina. There he was captured and jailed, but ultimately sold to planter James Owen. Owen was impressed by ibn Said's education, since very few slaves even knew how to read and write. Owen attempted to convert him to Christianity and provided him with a Bible and other books. He also urged him to write his memoirs, which he did in 1831. He wrote at least thirteen other Arabic documents, mostly on history and theology. Ibn Said lived until his mid-90s and died in 1864, still enslaved.\""
+      },
+      "query": "Given the following paragraph, where was Omar ibn Said born?",
+      "response": "Omar ibn Said was born and raised in Futa Toro, an Islamic state located in the part of West Africa that is now Senegal."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Industrial Light & Magic (ILM) is an American motion picture visual effects company that was founded on May 26, 1975 by George Lucas. It is a division of the film production company Lucasfilm, which Lucas founded, and was created when he began production on the original Star Wars, now the fourth episode of the Skywalker Saga.\\n\\nILM originated in Van Nuys, California, then later moved to San Rafael in 1978, and since 2005 it has been based at the Letterman Digital Arts Center in the Presidio of San Francisco. In 2012, The Walt Disney Company acquired ILM as part of its purchase of Lucasfilm.\""
+      },
+      "query": "Who are Industrial Light and Magic?",
+      "response": "Industrial Light and Magic are one of the biggest and most innovative VFX (Visual Effects) and CGI (Computer generated imagery) firms. The company was started by George Lucas.and was acquired by Disney. They have contributed Visual special effects for over 300 films including the Star Wars series, Indiana Jones series and the Jurassic Park series."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Bon Iver (/\\u02ccbo\\u028an i\\u02d0\\u02c8v\\u025b\\u0259r/ BOHN ee-VAIR) is an American indie folk band founded in 2006 by singer-songwriter Justin Vernon.\""
+      },
+      "query": "Who is the singer in Bon Iver?",
+      "response": "Justin Vernon is the singer-songwriter in Bon Iver."
+    },
+    {
+      "prompt_slug": "closed_qa/v2",
+      "context": {
+        "information": "\"In the 21st century alone, UVA teams have won seventeen NCAA championships. The men's teams have won recent NCAA titles in basketball (2019); lacrosse (2003, 2006, 2011, 2019, and 2021); baseball (2015); soccer (2009 and 2014); and tennis (2013, 2015, 2016, 2017, and 2022). UVA women have won recent NCAA titles in rowing (2010 and 2012) and swimming & diving (2021 and 2022). The Cavaliers rank first in the ACC (a power conference) with 22 men's NCAA Championships, and rank second in the conference with nine women's NCAA Championships.\""
+      },
+      "query": "According to this reference text about UVA, what years have UVA women won NCAA titles in rowing?",
+      "response": "UVA women won NCAA titles in rowing in 2010 and 2012."
+    },
+    {
+      "prompt_slug": "closed_qa/v3",
+      "context": {
+        "information": "\"The Airbus A380 is a large wide-body airliner that was developed and produced by Airbus. It is the world's largest passenger airliner and only full-length double-deck jet airliner. Airbus studies started in 1988, and the project was announced in 1990 to challenge the dominance of the Boeing 747 in the long-haul market. The then-designated A3XX project was presented in 1994; Airbus launched the \\u20ac9.5 billion ($10.7 billion) A380 programme on 19 December 2000. The first prototype was unveiled in Toulouse on 18 January 2005, with its first flight on 27 April 2005. It then obtained its type certificate from the European Aviation Safety Agency (EASA) and the US Federal Aviation Administration (FAA) on 12 December 2006.\\n\\nDue to difficulties with the electrical wiring, the initial production was delayed by two years and the development costs almost doubled. It was first delivered to Singapore Airlines on 15 October 2007 and entered service on 25 October. Production peaked at 30 per year in 2012 and 2014. However, after the largest customer, Emirates, reduced its last order in February 2019, Airbus announced that A380 production would end in 2021. On 16 December 2021, Emirates received its 123rd A380, which was the 251st and last delivered by Airbus. The $25 billion investment was not recouped.\\n\\nThe full-length double-deck aircraft has a typical seating for 525 passengers, with a maximum certified capacity for 853 passengers. The quadjet is powered by Engine Alliance GP7200 or Rolls-Royce Trent 900 turbofans providing a range of 8,000 nmi (14,800 km). As of December 2021, the global A380 fleet had completed more than 800,000 flights over 7.3 million block hours with no fatalities and no hull losses. As of December 2022, there were 237 aircraft in service with 16 operators worldwide.\""
+      },
+      "query": "What is the biggest passenger airliner?",
+      "response": "A380 is the largest passenger airliner. It has a typical seating for 525 passengers, with a maximum certified capacity for 853 passengers and has a range of 14,800km."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Alberto Mich\\u00e1n Halbinger (born 2 December 1978) is an Israeli-Mexican Olympic horse rider. Born in Mexico, he competes for Israel. He qualified to represent Israel at the 2020 Summer Olympics in Tokyo.\\n\\nBiography\\nMichan was born in Mexico; his family comes from Israel.\\n\\nHe was a finalist at the FEI World Cup Jumping in 2006 and 2007.\\n\\nHe competed in the 2006 and 2014 World Equestrian Games.\\n\\nHe competed for Mexico at the 2008 Summer Olympics in Beijing, both in individual jumping (coming in 29th) and in team jumping (coming in 8th).\\n\\nHe earned a bronze medal in Team Jumping at the 2011 Pan American Games in Guadalajara, Mexico.\\n\\nAt the 2012 Summer Olympics, he tied with Scott Brash and Nick Skelton, both of the team-gold medal-winning United Kingdom, for 5th in individual jumping. He was part of the Mexican team for team jumping, which finished in fifth place.\\n\\nHe qualified to represent Israel at the 2020 Summer Olympics in Tokyo.\""
+      },
+      "query": "Given a reference text about Alberto Mich\u00e1n Halbinger, in what olympics did he compete?",
+      "response": "Alberto Mich\u00e1n Halbinger competed in the 2008 and 2012 Summer Olympics."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"A few scholars give the start of the Golden Age as 711\\u2013718, the Muslim conquest of Iberia.\""
+      },
+      "query": "When did the golden age for Jewish culture start and where was it?",
+      "response": "The golden age for jewish culture started somewhere around 711-718 and it was in Spain."
+    },
+    {
+      "prompt_slug": "closed_qa/v3",
+      "context": {
+        "information": "\"Onigiri (\\u304a\\u63e1\\u308a or \\u5fa1\\u63e1\\u308a), also known as omusubi (\\u304a\\u7d50\\u3073), nigirimeshi (\\u63e1\\u308a\\u98ef), or rice ball, is a Japanese food made from white rice formed into triangular or cylindrical shapes and often wrapped in nori. Traditionally, an onigiri is filled with pickled ume (umeboshi), salted salmon, katsuobushi, kombu, tarako, mentaiko, takanazuke (pickled takana, Japanese giant red mustard greens) or any other salty or sour ingredient as a natural preservative. Most Japanese convenience stores stock their onigiri with various fillings and flavors. There are even specialized shops which only sell onigiri to take out. Due to the popularity of this trend in Japan, onigiri has become a popular staple in Japanese restaurants worldwide.\""
+      },
+      "query": "What is an onigiri made of?",
+      "response": "Onigiri is a Japanese food made from white rice formed into triangular or cylindrical shapes and often wrapped in nori (seaweed). Traditionally, an onigiri is filled with pickled ume (umeboshi), salted salmon, katsuobushi, kombu, tarako, mentaiko, takanazuke (pickled takana, Japanese giant red mustard greens) or any other salty or sour ingredient as a natural preservative."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"ECharts Java is a lightweight but comprehensive library for Java developers to easily use JavaScript visualization library Apache ECharts. The simple chart mode facilitates users to write visualization fast and easily, empowered by the clean APIs provided by ECharts Java. The advanced mode helps create an Option object and its Json representation in chainable Java codes, which includes almost all the features defined in Apache ECharts. Now ECharts Java supports Apache ECharts version 5.x.\\n\\nFeatures\\n\\n- Simple, clean and organized APIs, supporting method chaining\\n- Full coverage of Apache ECharts functionalities\\n- Easily integrate with Web Frameworks\\n- Flexible export format, including HTML and images\\n- Complete and detailed documentation and examples\""
+      },
+      "query": "What is ECharts Java?",
+      "response": "ECharts Java is a lightweight, comprehensive library for Java developers to easily integrate JavaScript visualization library\u00a0Apache ECharts into their web frameworks. The simple and clean APIs facilitate users to develop visualization components fast and easily. For complex and advanced usage, it allows developers to create an Option object and its Json representation. It is compatible with Apache ECharts version 5.x and provides almost full coverage of Apache ECharts functionalities. \n\nHere are some highlights of ECharts Java:\n\n- Simple, clean, organized APIs with method chaining\n- Full coverage of\u00a0Apache ECharts\u00a0functionalities\n- Easily integrate with Web Frameworks\n- Flexible export format, including HTML and images\n- Complete and detailed documentation and examples"
+    },
+    {
+      "prompt_slug": "closed_qa/v1",
+      "context": {
+        "information": "\"Ibrahima Tamba (born 1 January 1967) is a Senegalese sprinter. He competed in the 200 meters at the 1988 Summer Olympics and the 1992 Summer Olympics\""
+      },
+      "query": "Who is Ibrahima Tamba?",
+      "response": "Ibrahima Tamba is an olympic sprinter from Senegal who participated in the 88 and 92 summer olympics"
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Johan I of East Frisia (1506\\u20131572) was a member of the house of Cirksena and a non-reigning Count of East Frisia and later imperial governor of Limburg. His father, Edzard the Great, had introduced primogeniture in the county of East Frisia, so that his older brother Enno II of East Frisia inherited the county alone and he had to hold back. Despite his ambitions, he always acknowledged his brother's rights and did not dispute the inheritance.\""
+      },
+      "query": "Who introduced primogeniture into East Frisia?",
+      "response": "Edzard the Great"
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"The dry roasting process employs either the batch or continuous method. In the batch method, peanuts are heated in large quantities in a revolving oven at about 800 \\u00b0F (430 \\u00b0C). Next, the peanuts in each batch are uniformly held and roasted in the oven at 320 \\u00b0F (160 \\u00b0C) for about 40 to 60 minutes. This method is good to use when the peanuts differ in moisture content. In the continuous method, a hot air roaster is employed. The peanuts pass through the roaster whilst being rocked to permit even roasting. A photometer indicates the completion of dry roasting. This method is favored by large manufacturers since it can lower the rate of spoilage and requires less labor.\""
+      },
+      "query": "Given this paragraph about roasting peanuts to make peanut butter, what temperature are peanuts roasted using the batch method in celsius?",
+      "response": "Peanuts are heated in a revolving oven at about 430 \u00b0C using the batch method."
+    },
+    {
+      "prompt_slug": "closed_qa/v2",
+      "context": {
+        "information": "\"Modern K-pop \\\"idol\\\" culture began in the 1990s, as K-pop idol music grew into a subculture that amassed enormous fandoms of teenagers and young adults. After a slump in early idol music, from 2003, TVXQ and BoA started a new generation of K-pop idols that broke the music genre into the neighboring Japanese market and continue to popularize K-pop internationally today. With the advent of online social networking services and South Korean TV shows, the current spread of K-pop and South Korean entertainment, known as the Korean Wave, is seen not only in East Asia and Southeast Asia, but also in Pakistan, Bangladesh, India, Latin America, North Africa, Southern Africa and East Africa, the Middle East and throughout the Western world, gaining an international audience.\""
+      },
+      "query": "How popular is K-pop around the world?",
+      "response": "K-pop is a popular music genre that has a fan following across the whole world. It spread to worldwide fandom with the advent and proliferation of online social networking services."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Larissa Ilinichna Volpert (Russian: \\u041b\\u0430\\u0440\\u0438\\u0441\\u0430 \\u0418\\u043b\\u044c\\u0438\\u043d\\u0438\\u0447\\u043d\\u0430 \\u0412\\u043e\\u043b\\u044c\\u043f\\u0435\\u0440\\u0442; 30 March 1926 \\u2013 1 October 2017) was a Soviet chess Woman Grandmaster and Russian and Estonian philologist. She was a three time Soviet women's chess champion (1954, 1958, and 1959).\\n\\nLife\\nBorn in Leningrad, she learned chess from her older brother and received chess instruction at the Leningrad Pioneers Palace. In 1947, she tied for first at the Leningrad Women's Championship. She played her first USSR Women's Championship in 1949 and finished equal fifth. In 1954, she won her first USSR Women's Championship. She scored 2\\u20130 against Nina Hru\\u0161kov\\u00e1-B\\u011blsk\\u00e1 in the 1954 USSR v. Czechoslovakia match. In 1958 she shared the USSR Women's Championship title, and in 1959 she won for the third time, her second outright victory.\\n\\nVolpert earned the Woman International Master title in 1954 and the Woman Grandmaster title in 1978. She had a degree in philology from Leningrad University and since 1977 taught Russian philology at the University of Tartu, Estonia. Her major works are about Pushkin's and Lermontov's poetry, especially in their connections to French literature. She died at the age of 91 on 1 October 2017.[3\""
+      },
+      "query": "Given a reference text about Larissa Ilinichna Volpert, tell me what game she played, when she was champion, and what titles she earned.",
+      "response": "Larissa Ilinichna Volpert played chess and was the Soviet women's chess champion in 1954, 1958 and 1959. She earned the titles of Woman International Master and Woman Grandmaster for her accomplishments in the game of chess."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Sagan is considered one of cycling's greatest talents, having earned many prestigious victories, including three consecutive World Championships, one European Championship, two Paris\\u2013Nice stages, seven Tirreno\\u2013Adriatico stages, one in the Tour de Romandie, three and the overall classification in the Tour de Pologne, a record seventeen stages and the overall in the Tour of California, and another fifteen in the Tour de Suisse.\""
+      },
+      "query": "How many cycling world championships has Peter Sagan won?",
+      "response": "Sagan has won three consecutive cycling world championships"
+    },
+    {
+      "prompt_slug": "closed_qa/v2",
+      "context": {
+        "information": "\"Both the modern free software movement and the Open Source Initiative were born from a common history of Unix, Internet free software, and the hacker culture, but their basic goals and philosophy differ, the free software movement being more focused on the ethics of software, and their open source counterparts being more focused on practical benefits. The Open Source Initiative chose the term \\\"open source,\\\" in founding member Michael Tiemann's words, to \\\"dump the moralizing and confrontational attitude that had been associated with 'free software'\\\" and instead promote open source ideas on \\\"pragmatic, business-case grounds.\\\"\""
+      },
+      "query": "Which is better the Free Software Movement or the Open Source Initiative?",
+      "response": "The Free Software Movement is the better organization for me since I also hold a high value on ethics and believe in that vision."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"\\\"I'm Just a Singer (In a Rock and Roll Band)\\\" is a 1973 hit single by the English progressive rock band the Moody Blues, written by the band's bassist, John Lodge. It was first released in 1972 as the final track on the album Seventh Sojourn and was later released as a single in 1973, with \\\"For My Lady\\\" as its B-side. It was the second single released from Seventh Sojourn, with the first being \\\"Isn't Life Strange\\\", which was also written by Lodge.\\n\\nThe song reached number 12 on the Billboard Hot 100 in the US, becoming one of their highest-charting hits in that country, but fared less well in their native UK, where it managed number 36. It was also the final single released by the Moody Blues prior to their five-year hiatus, which was agreed upon so each of the band members could pursue their own solo careers. Their next single would not be until 1978, with \\\"Steppin' in a Slide Zone\\\".\""
+      },
+      "query": "When was \"I'm Just a Singer (In a Rock and Roll Band)\" released?",
+      "response": "\"I'm Just a Singer (In a Rock and Roll Band)\" was originally released in 1972 as the final track on the album Seventh Sojourn and was later released as a single in 1973."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"The British Virgin Islands (BVI), officially the Virgin Islands, are a British Overseas Territory in the Caribbean, to the east of Puerto Rico and the US Virgin Islands and north-west of Anguilla. The islands are geographically part of the Virgin Islands archipelago and are located in the Leeward Islands of the Lesser Antilles and part of the West Indies.\\n\\nThe British Virgin Islands consist of the main islands of Tortola, Virgin Gorda, Anegada and Jost Van Dyke, along with more than 50 other smaller islands and cays. About 16 of the islands are inhabited. The capital, Road Town, is on Tortola, the largest island, which is about 20 km (12 mi) long and 5 km (3 mi) wide. The islands had a population of 28,054 at the 2010 Census, of whom 23,491 lived on Tortola; current estimates put the population at 35,802 (July 2018).\""
+      },
+      "query": "Where are the British Virgin Islands (BVI) and which islands are a part of the BVI?",
+      "response": "The British Virgin Islands (BVI), officially the Virgin Islands, are a British Overseas Territory in the Caribbean, to the east of Puerto Rico and the US Virgin Islands and north-west of Anguilla. The islands are geographically part of the Virgin Islands archipelago and are located in the Leeward Islands of the Lesser Antilles and part of the West Indies.\n\nThe British Virgin Islands consist of the main islands of Tortola, Virgin Gorda, Anegada and Jost Van Dyke, along with more than 50 other smaller islands and cays."
+    },
+    {
+      "prompt_slug": "closed_qa/v3",
+      "context": {
+        "information": "\"Theodor Seuss Geisel (/su\\u02d0s \\u02c8\\u0261a\\u026az\\u0259l, z\\u0254\\u026as -/ (listen); March 2, 1904 \\u2013 September 24, 1991) was an American children's author and cartoonist. He is known for his work writing and illustrating more than 60 books under the pen name Dr. Seuss (/su\\u02d0s, zu\\u02d0s/). His work includes many of the most popular children's books of all time, selling over 600 million copies and being translated into more than 20 languages by the time of his death.\""
+      },
+      "query": "How many books did Dr Seuss write?",
+      "response": "Dr Seuss is known for his work writing and illustrating more than 60 books under the pen name Dr. Seuss"
+    },
+    {
+      "prompt_slug": "closed_qa/v3",
+      "context": {
+        "information": "\"Zijldijk has three churches. The Mennomite church was built in 1772 in a non conspicuous barn-like building. It is still in use as a church. The Dutch Reformed church has been reconstructed as a village house. The Reformed Church was constructed in 1886, and nowadays serves as a care facility.\""
+      },
+      "query": "Given the passage about churches built in the village of Zijldijk in the Netherlands, when was the only running church built?",
+      "response": "The Mennomite church was built in 1772 and is still in use as a church."
+    },
+    {
+      "prompt_slug": "closed_qa/v3",
+      "context": {
+        "information": "\"The primary housing areas for first-year students are McCormick Road Dormitories, often called \\\"Old Dorms\\\", and Alderman Road Dormitories, often called \\\"New Dorms\\\". The 1970s-era Alderman Road Dorms are being fully replaced with brand new dormitory buildings in the same area. The replacements feature hall-style living arrangements with common areas and many modern amenities. Instead of being torn down and replaced like the original New Dorms, the Old Dorms will see a $105 million renovation project between 2017 and 2022. They were constructed in 1950, and are also hall-style constructions but with fewer amenities. The Old Dorms are closer to the students' classes.\""
+      },
+      "query": "According to this paragraph, what are the \"Old Dorms\" at the University of Virginia?",
+      "response": "The \"Old Dorms\" at the University of Virginia often refer to the primary housing area for first-year students on McCormick Road."
+    },
+    {
+      "prompt_slug": "closed_qa/v2",
+      "context": {
+        "information": "\"August (2001), is the first novel by author Gerard Woodward. It was shortlisted for Whitbread Book Award (2001).\""
+      },
+      "query": "Given this paragraph, who wrote \"August?\"",
+      "response": "Gerard Woodward"
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"World War II or the Second World War, often abbreviated as WWII or WW2, was a global conflict that lasted from 1939 to 1945. The vast majority of the world's countries, including all of the great powers, fought as part of two opposing military alliances: the Allies and the Axis. Many participants threw their economic, industrial, and scientific capabilities behind this total war, blurring the distinction between civilian and military resources. Aircraft played a major role, enabling the strategic bombing of population centres and the delivery of the only two nuclear weapons ever used in war.\\n\\nWorld War II was by far the deadliest conflict in history; it resulted in an estimated 70 to 85 million fatalities, mostly among civilians. Tens of millions died due to genocides (including the Holocaust), starvation, massacres, and disease. In the wake of the Axis defeat, Germany and Japan were occupied, and war crimes tribunals were conducted against German and Japanese leaders.\\n\\nThe causes of World War II are debated, but contributing factors included the Second Italo-Ethiopian War, Spanish Civil War, Second Sino-Japanese War, Soviet\\u2013Japanese border conflicts, the rise of fascism in Europe, and European tensions in the aftermath of World War I. World War II is generally considered to have begun on 1 September 1939, when Nazi Germany, under Adolf Hitler, invaded Poland. The United Kingdom and France subsequently declared war on Germany on 3 September. Under the Molotov\\u2013Ribbentrop Pact of August 1939, Germany and the Soviet Union had partitioned Poland and marked out their \\\"spheres of influence\\\" across Finland, Estonia, Latvia, Lithuania and Romania. From late 1939 to early 1941, in a series of campaigns and treaties, Germany conquered or controlled much of continental Europe, in a military alliance with Italy, Japan and other countries called the Axis. Following the onset of campaigns in North Africa and East Africa, and the fall of France in mid-1940, the war continued primarily between the European Axis powers and the British Empire, with war in the Balkans, the aerial Battle of Britain, the Blitz of the United Kingdom, and the Battle of the Atlantic. On 22 June 1941, Germany led the European Axis powers in an invasion of the Soviet Union, opening the Eastern Front, the largest land theatre of war in history.\""
+      },
+      "query": "Given this paragraph about WWII, how many fatalities happened?",
+      "response": "World War II lasted from 1939 to 1945 and was by far the deadliest conflict in history. It is estimated that there were 70-85 million fatalities, mostly among civilians. Tens of millions died due to genocides, starvation, assacres, and disease."
+    },
+    {
+      "prompt_slug": "closed_qa/v2",
+      "context": {
+        "information": "\"The 149th Boat Race took place on 6 April 2003. Held annually, the Boat Race is a side-by-side rowing race between crews from the Universities of Oxford (in dark blue) and Cambridge (in light greenish blue) along a 4.2-mile (6.8 km) tidal stretch of the River Thames in south-west London. The lead changed twice during the race, which Oxford won by one foot (30 cm), the smallest margin of victory in the history of the event. The close race has been described as \\\"epic\\\", while Olympic gold medallist Steve Redgrave suggested that the race was the \\\"greatest we will see in our lifetimes\\\".\""
+      },
+      "query": "Based on the reference paragraph, when was the 149th Boat Race?",
+      "response": "April 6, 2003"
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Rhodes Scholarships are international postgraduate awards given to students to study at the University of Oxford. Since the scholarship program began in 1904, UVA has had fifty-five Rhodes Scholars, the most of any university in the American South, eighth-most overall, and third-most outside the Ivy League (behind Stanford University and the United States Military Academy (West Point)).\\n\\nEight NASA astronauts and launch directors are UVA alumni: Karl Gordon Henize, Bill Nelson, Thomas Marshburn, Leland Melvin, Jeff Wisoff, Kathryn Thornton, Patrick Forrester; and Michael Leinbach.\\n\\nThe Pulitzer Prize has been awarded to eight UVA alumni: Edward P. Jones, Ron Suskind, Virginius Dabney, Claudia Emerson, Henry Taylor, Lane DeGregory, George Rodrigue, and Michael Vitez.\""
+      },
+      "query": "According to the text below about UVA, name the UVA alumni that have won the Pulitzer Prize.",
+      "response": "The Pulitzer Prize has been awarded to UVA alumni: Edward P. Jones, Ron Suskind, Virginius Dabney, Claudia Emerson, Henry Taylor, Lane DeGregory, George Rodrigue, and Michael Vitez."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"The Brownstown Marl is a geologic formation in Arkansas. It preserves fossils dating back to the Cretaceous period.\""
+      },
+      "query": "Which state is named in the passage?",
+      "response": "Arkansas"
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Scholars generally acknowledge six cradles of civilization. Mesopotamia, Ancient Egypt, Indus Valley, and Ancient China are believed to be the earliest in the Old World. Cradles of civilization in the New World are the Caral-Supe civilization of coastal Peru and the Olmec civilization of Mexico. All of the cradles of civilization depended upon agriculture for sustenance (except possibly Caral-Supe which may have depended initially on marine resources). All depended upon farmers producing an agricultural surplus to support the centralized government, political leaders, priests, and public works of the urban centers of the civilization.\\n\\nLess formally, the term \\\"cradle of civilization\\\" is often used to refer to other historic ancient civilizations, such as Greece or Rome, which have both been called the \\\"cradle of Western civilization\\\".\""
+      },
+      "query": "What is the oldest known civilization?",
+      "response": "The oldest known human civilizations are known to exist in Mesopotamia (Modern day Iraq), Indus Valley (a region located in modern-day Pakistan), Ancient Egypt and Ancient China."
+    },
+    {
+      "prompt_slug": "closed_qa/v1",
+      "context": {
+        "information": "\"When Kennedy died in August 2009, he was the second-most senior member of the Senate (after President pro tempore Robert Byrd of West Virginia) and the third longest-serving senator of all time, behind Byrd and Strom Thurmond of South Carolina. Later that same year, he was passed by Daniel Inouye of Hawaii. Kennedy therefore held the record as the longest-serving Democratic member of Congress to solely serve as a senator until October 2021, when he was surpassed by fellow Democrat Patrick Leahy of Vermont.\""
+      },
+      "query": "Based on this passage about Ted Kennedy, at the time of his death, who were the three longest-serving senators of all time?",
+      "response": "Based on this passage, Robert Byrd, Strom Thurmond and Kennedy were the three longest-serving senators of all time."
+    },
+    {
+      "prompt_slug": "closed_qa",
+      "context": {
+        "information": "\"Halt and Catch Fire is an American period drama television series created by Christopher Cantwell and Christopher C. Rogers. It aired on the cable network AMC in the United States from June 1, 2014, to October 14, 2017, spanning four seasons and 40 episodes. It depicts a fictionalized insider's view of the personal computer revolution of the 1980s and the early days of the World Wide Web in the early 1990s. The show's title refers to computer machine code instruction Halt and Catch Fire (HCF), the execution of which would cause the computer's central processing unit to cease meaningful operation (and in an exaggeration, catch fire).\""
+      },
+      "query": "What is Halt and Catch Fire about?",
+      "response": "Halt and Catch Fire is an American period drama spanning four seasons and 40 episodes. It depicts a fictionalized insider's view of the personal computer revolution of the 1980s and the early days of the World Wide Web in the early 1990s."
+    }
+  ]
