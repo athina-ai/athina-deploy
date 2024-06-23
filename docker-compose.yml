@@ -98,6 +98,7 @@ services:
     volumes:
       - jobs_db_postgres_data:/var/lib/postgresql/data
     container_name: jobs_db
+    command: ["postgres", "-c", "max_connections=200"]
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 5s
@@ -120,6 +121,7 @@ services:
         condition: service_healthy
     links:
       - api
+    restart: unless-stopped
     environment:
       - DATABASE_URL=${JOBS_DATABASE_URL}
       - AWS_LAMBDA_API_KEY=${AWS_LAMBDA_API_KEY}
@@ -129,6 +131,7 @@ services:
       - ANALYTICS_SERVER_ROOT_URL=${ANALYTICS_ROOT_URL}
       - ANALYTICS_SERVER_SECRET_KEY=${ANALYTICS_SERVER_SECRET_KEY}
       - MAX_CONCURRENT_EVAL_JOBS=1
+      - POOL_SIZE=5
       - ENV=local
       - NEW_RELIC_ENABLED=false
 
@@ -215,7 +218,7 @@ services:
       - CELERY_RESULT_BACKEND=redis://redis:6379/0
       - TOTAL_DATA_EXPORT_PROMPT_RUNS_SIZE=
       - API_SERVER_ROOT_URL=${API_SERVER_ROOT_URL}
-      - DATABASE_URL=postgresql://postgres:postgres@jobs_db:5432/jobs
+      - DATABASE_URL=${JOBS_DATABASE_URL}
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - API_SERVER_SECRET_KEY=${API_SERVER_SECRET_KEY}
       - ANALYTICS_SERVER_ROOT_URL=${ANALYTICS_ROOT_URL}
@@ -263,7 +266,7 @@ services:
       - CELERY_RESULT_BACKEND=redis://redis:6379/0
       - TOTAL_DATA_EXPORT_PROMPT_RUNS_SIZE=
       - API_SERVER_ROOT_URL=${API_SERVER_ROOT_URL}
-      - DATABASE_URL=postgresql://postgres:postgres@jobs_db:5432/jobs
+      - DATABASE_URL=${JOBS_DATABASE_URL}
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - API_SERVER_SECRET_KEY=${SERVER_API_SECRET}
       - ANALYTICS_SERVER_ROOT_URL=${ANALYTICS_ROOT_URL}
