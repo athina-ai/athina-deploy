@@ -166,6 +166,7 @@ services:
     # If you are providing your own database url in the .env file, you can comment the depends_on part.
     links:
       - analytics_db
+      - jobs_db
       - api
     depends_on:
       analytics_db:
@@ -174,6 +175,7 @@ services:
         condition: service_started
     environment:
       - DATABASE_URL=${ANALYTICS_DATABASE_URL}
+      - JOBS_DATABASE_URL=${JOBS_DATABASE_URL}
       - ROOT_URL=${ANALYTICS_ROOT_URL}
       - ANALYTICS_SERVER_API_SECRET=${ANALYTICS_SERVER_API_SECRET}
       - ENV=local
