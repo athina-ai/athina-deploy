@@ -204,6 +204,7 @@ services:
       - API_SECRET=${GATEWAY_API_SECRET}
       - API_SERVER_ROOT_URL=${API_SERVER_ROOT_URL}
       - API_SERVER_SECRET_KEY=${API_SERVER_SECRET_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
 
   fastapi:
     profiles: ["worker"]
