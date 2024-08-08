@@ -1,4 +1,4 @@
-version: '3.9'
+version: "3.9"
 
 services:
   prompt_db:
@@ -20,7 +20,7 @@ services:
 
   api:
     profiles: ["core"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-api:v1.8.3
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-api:v1.8.4
     build:
       context: ../athina-api/.
       dockerfile: Dockerfile
@@ -193,7 +193,7 @@ services:
 
   gateway:
     profiles: ["core"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-gateway:v1.8.3
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-gateway:v1.8.4
     build:
       context: ../gateway/.
       dockerfile: Dockerfile
@@ -208,7 +208,7 @@ services:
 
   fastapi:
     profiles: ["worker"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-workers:v1.8.0
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-workers:v1.8.1
     build:
       context: ../athina-workers/.
       dockerfile: ./Dockerfile-server
@@ -245,7 +245,7 @@ services:
       - CLOUD_PROVIDER=server
       - GENERATE_DATASET_MAX_CONCURRENT_REQUESTS=3
       - WORKER_API_KEY=${WORKER_API_KEY}
-  
+
   redis:
     profiles: ["worker"]
     container_name: jobs_queue
@@ -257,7 +257,7 @@ services:
 
   worker:
     profiles: ["worker"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-workers:v1.8.0
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-workers:v1.8.1
     build:
       context: ../athina-workers/.
       dockerfile: ./Dockerfile-server
