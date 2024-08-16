@@ -20,7 +20,7 @@ services:
 
   api:
     profiles: ["core"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-api:v1.8.6
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-api:v1.8.7
     build:
       context: ../athina-api/.
       dockerfile: Dockerfile
@@ -193,7 +193,7 @@ services:
 
   gateway:
     profiles: ["core"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-gateway:v1.8.5
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-gateway:v1.8.6
     build:
       context: ../gateway/.
       dockerfile: Dockerfile
@@ -208,7 +208,7 @@ services:
 
   fastapi:
     profiles: ["worker"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-workers:v1.8.2
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-workers:v1.8.3
     build:
       context: ../athina-workers/.
       dockerfile: ./Dockerfile-server
@@ -257,7 +257,7 @@ services:
 
   worker:
     profiles: ["worker"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-workers:v1.8.2
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-workers:v1.8.3
     build:
       context: ../athina-workers/.
       dockerfile: ./Dockerfile-server
