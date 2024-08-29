@@ -205,6 +205,7 @@ services:
       - API_SERVER_ROOT_URL=${API_SERVER_CONTAINER_URL}
       - API_SERVER_SECRET_KEY=${SERVER_API_SECRET}
       - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - WORKERS_SIZE=${WORKERS_SIZE}
 
   fastapi:
     profiles: ["worker"]
