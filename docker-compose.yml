@@ -294,6 +294,23 @@ services:
       - CLOUD_PROVIDER=server
       - GENERATE_DATASET_MAX_CONCURRENT_REQUESTS=3
 
+  dozzle:
+    image: amir20/dozzle:latest
+    container_name: dozzle
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "8080:8080"
+    environment:
+      DOZZLE_ADDR: ':8080'
+      DOZZLE_BASE: '/'
+      DOZZLE_TAILSIZE: 1000
+      DOZZLE_MAXAGE: 12h
+      DOZZLE_AUTH: true
+      DOZZLE_AUTH_USERNAME: ${DOZZLE_USERNAME}
+      DOZZLE_AUTH_PASSWORD: ${DOZZLE_PASSWORD}
+    restart: unless-stopped
+
 volumes:
   prompt_db_postgres_data:
   jobs_db_postgres_data:
