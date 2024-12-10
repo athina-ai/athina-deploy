@@ -94,7 +94,7 @@ users:
   logs_admin:
     email: me@email.net
     name: Admin
-    # Generated with docker run amir20/dozzle generate --name Admin --email me@email.net --password secret admin
+    # Generated with docker run amir20/dozzle generate --name Admin --email me@email.net --password secret logs_admin
     password: <password>
 ```
 
