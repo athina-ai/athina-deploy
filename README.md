@@ -100,6 +100,13 @@ users:
 
 You can start the dozzle service using the following command (make sure the dozzle env variables are set):
 
+Required environment variables:
+- `DOZZLE_PORT`: The port to expose the Dozzle web interface (e.g., 9001)
+- `DOZZLE_USERNAME`: Username for authentication
+- `DOZZLE_PASSWORD`: Password for authentication
+ 
+ ```bash
+ docker-compose up -d dozzle
 ```bash
 docker-compose up -d dozzle
 ```
