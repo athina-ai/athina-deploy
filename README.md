@@ -76,8 +76,11 @@ docker-compose pull
 ## For viewing and searching container logs
 
 # Dozzle
-The dozzle service is provided for you to view the logs of the services.
+The dozzle service is provided for you to view the logs of the services. 
 
+> ⚠️ **Security Note**: Dozzle requires read-only access to the Docker socket to function. 
+> While configured with read-only access, this still allows the service to read information 
+> about all containers, their configurations, and logs.
 For setting up the dozzle service, you can create the `dozzle-users.yml` file and update the values accordingly.
 ```bash
 # Generate the file content with
