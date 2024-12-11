@@ -72,3 +72,41 @@ docker-compose push
 # Pull the images from the ECR
 docker-compose pull
 ```
+
+## For viewing and searching container logs
+
+# Dozzle
+The dozzle service is provided for you to view the logs of the services. 
+
+> ⚠️ **Security Note**: Dozzle requires read-only access to the Docker socket to function. 
+> While configured with read-only access, this still allows the service to read information 
+> about all containers, their configurations, and logs.
+For setting up the dozzle service, you can create the `dozzle-users.yml` file and update the values accordingly.
+```bash
+# Generate the file content with
+docker run amir20/dozzle generate --name Admin --email me@email.net --password secret logs_admin
+```
+
+Sample output
+```yml
+users:
+  # "logs_admin" here is username
+  logs_admin:
+    email: me@email.net
+    name: Admin
+    # Generated with docker run amir20/dozzle generate --name Admin --email me@email.net --password secret logs_admin
+    password: <password>
+```
+
+You can start the dozzle service using the following command (make sure the dozzle env variables are set):
+
+Required environment variables:
+- `DOZZLE_PORT`: The port to expose the Dozzle web interface (e.g., 9001)
+- `DOZZLE_USERNAME`: Username for authentication
+- `DOZZLE_PASSWORD`: Password for authentication
+ 
+ ```bash
+ docker-compose up -d dozzle
+```bash
+docker-compose up -d dozzle
+```

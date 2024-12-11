@@ -294,6 +294,22 @@ services:
       - CLOUD_PROVIDER=server
       - GENERATE_DATASET_MAX_CONCURRENT_REQUESTS=3
 
+  # Dozzle provides web UI for viewing and searching container logs
+  dozzle:
+    image: amir20/dozzle:v8.8.2
+    container_name: dozzle
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./dozzle-users.yml:/data/users.yml
+    ports:
+      - "${DOZZLE_PORT}:8080"
+    environment:
+      DOZZLE_ADDR: ":${DOZZLE_PORT}"
+      DOZZLE_BASE: '/'
+      DOZZLE_AUTH_PROVIDER: simple
+      DOZZLE_NO_ANALYTICS: true
+    restart: unless-stopped
+
 volumes:
   prompt_db_postgres_data:
   jobs_db_postgres_data:
