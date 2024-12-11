@@ -105,8 +105,6 @@ Required environment variables:
 - `DOZZLE_USERNAME`: Username for authentication
 - `DOZZLE_PASSWORD`: Password for authentication
  
- ```bash
- docker-compose up -d dozzle
 ```bash
 docker-compose up -d dozzle
 ```
