@@ -12,14 +12,7 @@ services:
       - ./nginx/conf.d:/etc/nginx/conf.d
       - ./nginx/certs:/etc/nginx/certs
       - ./nginx/logs:/var/log/nginx
-    networks:
-      - athina_network
-    # Add extra hosts to make it work on Linux
+    # Remove network since we don't need to connect to other containers
     extra_hosts:
       - "host.docker.internal:host-gateway"
     restart: unless-stopped
-
-networks:
-  athina_network:
-    name: athina_network
-    external: true
