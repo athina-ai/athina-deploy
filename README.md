@@ -111,3 +111,17 @@ Required environment variables:
 ```bash
 docker-compose up -d dozzle
 ```
+
+# Nginx
+ 
+For TLS setup, you can use the `athina-deploy/docker-compose-nginx.yml` file. First either generate self signed certificates of certificates using certbot or some other tool. Then set the right path for those in the docker compose yml file. 
+
+Following is an example on how to set up using self signed certificates.
+
+```bash
+mkdir certs
+CERTS_PATH=./certs
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+  -keyout $CERTS_PATH/nginx.key -out $CERTS_PATH/nginx.crt \
+  -subj "/C=US/ST=State/L=City/O=Organization/CN=1.2.3.4" # replace with your ip address/domain
+```
