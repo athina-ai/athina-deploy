@@ -9,6 +9,6 @@ services:
       - SSL_CERT=/etc/nginx/certs/nginx.crt
       - SSL_KEY=/etc/nginx/certs/nginx.key
     volumes:
-      - ${NGINX_CONF_PATH}/nginx.conf:/etc/nginx/nginx.conf:ro
+      - .nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - ${CERTS_PATH}:/etc/nginx/certs:ro
 
