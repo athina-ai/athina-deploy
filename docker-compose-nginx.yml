@@ -4,7 +4,11 @@ services:
   nginx:
     image: nginx:1.25-alpine
     container_name: athina_nginx
-    network_mode: "host"  # Use host networking
+    network_mode: "host"
+    environment:
+      - SSL_CERT=/etc/nginx/certs/nginx.crt
+      - SSL_KEY=/etc/nginx/certs/nginx.key
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./certs:/etc/nginx/certs:ro
+      - ${NGINX_CONF_PATH}/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ${CERTS_PATH}:/etc/nginx/certs:ro
+
