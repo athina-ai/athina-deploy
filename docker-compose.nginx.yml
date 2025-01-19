@@ -12,7 +12,9 @@ services:
       - ./nginx/conf.d:/etc/nginx/conf.d
       - ./nginx/certs:/etc/nginx/certs
       - ./nginx/logs:/var/log/nginx
-    # Remove network since we don't need to connect to other containers
+    environment:
+      - PUBLIC_IP=${PUBLIC_IP}
+    command: /bin/sh -c "envsubst '$$PUBLIC_IP' < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
     extra_hosts:
       - "host.docker.internal:host-gateway"
     restart: unless-stopped
