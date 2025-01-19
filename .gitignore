@@ -3,5 +3,4 @@ volume/
 dozzle-users.yml
 
 # Nginx
-nginx/logs/
-nginx/certs/
+certs/
