@@ -1,3 +1,7 @@
 volume/
 .env
 dozzle-users.yml
+
+# Nginx
+nginx/logs/
+nginx/certs/

@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  nginx:
+    image: nginx:1.25-alpine
+    profiles: ["core"]
+    container_name: athina_nginx
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/certs:/etc/nginx/certs
+      - ./nginx/logs:/var/log/nginx
+    networks:
+      - athina_network
+    # Add extra hosts to make it work on Linux
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+
+networks:
+  athina_network:
+    name: athina_network
+    external: true
