@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx:1.25-alpine
+    container_name: athina_nginx
+    network_mode: "host"
+    volumes:
+      - ./nginx/nginx-no-ssl.conf:/etc/nginx/nginx.conf:ro
