@@ -112,11 +112,20 @@ Required environment variables:
 docker-compose up -d dozzle
 ```
 
-# Nginx
- 
-For TLS setup, you can use the `athina-deploy/docker-compose-nginx.yml` file. First either generate self signed certificates of certificates using certbot or some other tool. Then set the right path for those in the docker compose yml file. 
 
-Following is an example on how to set up using self signed certificates.
+# SSL
+
+We support SSL using nginx. There are a few ways this can be achieved based on your existing infrastructure. You would need at least one of these to go ahead:
+
+  - Self-signed certificates (steps are provided below to create)
+  - Valid SSL certificates (Using [Let's Encrypt & Certbot](https://certbot.eff.org/) for example)
+  - SSL using a provider (like Cloudflare) 
+
+
+### Using certificates (Self signed or via 3rd party toolslike Let's Encrypt)
+For TLS setup with certificates, you can use the `athina-deploy/docker-compose-nginx.yml` file. Set the right path for the certificates in the docker compose yml file. 
+
+To get self signed certificates use the following command.
 
 ```bash
 mkdir certs
@@ -124,4 +133,19 @@ CERTS_PATH=./certs
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
   -keyout $CERTS_PATH/nginx.key -out $CERTS_PATH/nginx.crt \
   -subj "/C=US/ST=State/L=City/O=Organization/CN=1.2.3.4" # replace with your ip address/domain
+```
+
+### Using Cloudflare (with or without SSL Termination)
+From Cloudflare to our Server we have two options:
+  - Full SSL: HTTPS connection using SSL certificates
+  - Flexible SSL: Plain HTTP connection
+
+For the Full SSL, you can use the `athina-deploy/docker-compose-nginx.yml` file. Set the right path for the certificates in the docker compose yml file. For the flexible SSL, you can use the `athina-deploy/docker-compose-nginx-no-ssl.yml` file. Set the right path for the certificates in the docker compose yml file. Alternatively, you can skip using this entirely and use the dashboard directly running on 3000 port.
+
+### Starting nginx
+
+Once you have picked the right docker compose file, you can start nginx using the following command.
+
+```bash
+docker-compose -f docker-compose-nginx.yml up -d
 ```
