@@ -345,9 +345,6 @@ services:
     volumes:
       - dashboard_build:/app/.next
     restart: unless-stopped
-    depends_on:
-      - dashboard_builder
-      # - api
 
 volumes:
   prompt_db_postgres_data:
