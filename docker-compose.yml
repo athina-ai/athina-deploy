@@ -298,6 +298,7 @@ services:
   # Dozzle provides web UI for viewing and searching container logs
   dozzle:
     image: amir20/dozzle:v8.8.2
+    profiles: ["logs"]
     container_name: dozzle
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
@@ -311,8 +312,46 @@ services:
       DOZZLE_NO_ANALYTICS: true
     restart: unless-stopped
 
+  # Base image builder
+  dashboard_base:
+    profiles: ["dashboard-build"]
+    build:
+      context: ../athina-dashboard
+      dockerfile: Dockerfile
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-dashboard-base:v1.0.0
+
+  # Dashboard build stage
+  dashboard_builder:
+    profiles: ["dashboard"]
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-dashboard-base:v1.0.0
+    command: yarn build
+    environment:
+      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
+      NEXT_PUBLIC_ATHINA_BASE_URL: ${NEXT_PUBLIC_ATHINA_BASE_URL}
+      NEXT_PUBLIC_DEPLOYMENT_TYPE: ${NEXT_PUBLIC_DEPLOYMENT_TYPE}
+      NEXT_PUBLIC_AUTH_MECHANISMS: ${NEXT_PUBLIC_AUTH_MECHANISMS}
+    volumes:
+      - dashboard_build:/app/.next
+
+  # Dashboard runtime stage
+  dashboard:
+    profiles: ["dashboard"]
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-dashboard-base:v1.0.0
+    command: yarn start
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+    volumes:
+      - dashboard_build:/app/.next
+    restart: unless-stopped
+    depends_on:
+      - dashboard_builder
+      # - api
+
 volumes:
   prompt_db_postgres_data:
   jobs_db_postgres_data:
   analytics_db_postgres_data:
   redis-data:
+  dashboard_build:
