@@ -193,7 +193,7 @@ services:
 
   gateway:
     profiles: ["core"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-gateway:v1.8.26
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-gateway:v1.8.27
     network_mode: "host"
     build:
       context: ../gateway/.
