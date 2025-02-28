@@ -20,7 +20,7 @@ services:
 
   api:
     profiles: ["core"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-api:v1.8.36
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-api:v1.8.37
     build:
       context: ../athina-api/.
       dockerfile: Dockerfile
@@ -155,7 +155,7 @@ services:
 
   analytics:
     profiles: ["core"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-analytics:v1.8.6
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-analytics:v1.8.7
     build:
       context: ../athina-analytics/.
       dockerfile: Dockerfile
@@ -193,7 +193,7 @@ services:
 
   gateway:
     profiles: ["core"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-gateway:v1.8.29
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-gateway:v1.8.30
     network_mode: "host"
     build:
       context: ../gateway/.
