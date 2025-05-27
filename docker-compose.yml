@@ -3,7 +3,7 @@ version: "3.9"
 services:
   prompt_db:
     profiles: ["core"]
-    image: postgres:15.3-alpine
+    image: postgres:15-alpine3.21
     restart: unless-stopped
     environment:
       - POSTGRES_PASSWORD=${PROMPT_DB_POSTGRES_PASSWORD}
@@ -20,7 +20,7 @@ services:
 
   api:
     profiles: ["core"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-api:v1.8.40
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-api:v1.8.41
     build:
       context: ../athina-api/.
       dockerfile: Dockerfile
@@ -88,7 +88,7 @@ services:
 
   jobs_db:
     profiles: ["core"]
-    image: postgres:15.3-alpine
+    image: postgres:15-alpine3.21
     restart: unless-stopped
     ports:
       - "5432:5432"
@@ -107,7 +107,7 @@ services:
 
   scheduler:
     profiles: ["core"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-scheduler:v1.8.2
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-scheduler:v1.8.3
     build:
       context: ../athina-scheduler/.
       dockerfile: Dockerfile
@@ -138,7 +138,7 @@ services:
 
   analytics_db:
     profiles: ["core"]
-    image: postgres:15.3-alpine
+    image: postgres:15-alpine3.21
     restart: unless-stopped
     environment:
       - POSTGRES_PASSWORD=${ANALYTICS_DB_POSTGRES_PASSWORD}
@@ -155,7 +155,7 @@ services:
 
   analytics:
     profiles: ["core"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-analytics:v1.8.8
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-analytics:v1.8.9
     build:
       context: ../athina-analytics/.
       dockerfile: Dockerfile
@@ -212,7 +212,7 @@ services:
 
   fastapi:
     profiles: ["worker"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-workers:v1.8.14
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-workers:v1.8.15
     build:
       context: ../athina-workers/.
       dockerfile: ./Dockerfile-server
@@ -253,7 +253,7 @@ services:
   redis:
     profiles: ["worker"]
     container_name: jobs_queue
-    image: "redis:7.0-alpine"
+    image: "redis:7.4.3-alpine"
     restart: unless-stopped
     volumes:
       - redis-data:/data
@@ -261,7 +261,7 @@ services:
 
   worker:
     profiles: ["worker"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-workers:v1.8.14
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-workers:v1.8.15
     build:
       context: ../athina-workers/.
       dockerfile: ./Dockerfile-server
@@ -320,12 +320,12 @@ services:
     build:
       context: ../athina-dashboard
       dockerfile: Dockerfile
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-dashboard-base:v1.0.0
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-dashboard-base:v1.1.0
 
   # Dashboard build stage
   dashboard_builder:
     profiles: ["dashboard"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-dashboard-base:v1.0.0
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-dashboard-base:v1.1.0
     command: yarn build
     environment:
       NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
@@ -338,7 +338,7 @@ services:
   # Dashboard runtime stage
   dashboard:
     profiles: ["dashboard"]
-    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-dashboard-base:v1.0.0
+    image: 867387325299.dkr.ecr.eu-central-1.amazonaws.com/athina-dashboard-base:v1.1.0
     command: yarn start
     ports:
       - "3000:3000"
